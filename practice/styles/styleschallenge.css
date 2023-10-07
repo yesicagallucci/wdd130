@@ -1,0 +1,47 @@
+body{
+    background-color: pink;
+    width: 100%;
+    
+}
+
+h1{
+    text-align: center;
+    color:white;
+    }
+h1:hover{
+    color:black;
+}
+.smallquote{
+    text-align: center;
+    color:white;
+    font-size: 0.8em;
+    line-height:2em;
+    }
+ol{
+    margin:0 25%;
+    font-weight: bold;
+    line-height:2em;
+    font-size: 1em;
+
+}
+img{
+  display: block;
+  margin: 20px auto;
+  width: 20%;
+    
+}
+.bigquote {
+    color:white;
+    text-align:center;
+    margin:20px 35%;
+    font-size:1.8em;
+    
+}
+.name{
+    text-align: center;
+    font-weight:bold;
+    margin:30px 35%;
+    font-size: 0.8em;
+
+
+}
