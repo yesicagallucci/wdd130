@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    background-color: grey
+}
+header img{ 
+    width:100%;
+    margin:0;
+}
+#background{
+    background-color: grey;
+    margin:0;
+    padding:80px;
+    display: flex;
+    justify-content: space-between;
+}
+div img{
+    border-radius: 50%;
+    width: 25%;
+    border: 20px solid #5A5A5A;
+  
+}

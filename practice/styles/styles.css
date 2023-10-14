@@ -1,9 +1,9 @@
 body {
-    
+    margin:0;
   }
   nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 25px;
     
   }
   a {
@@ -11,10 +11,13 @@ body {
     margin: 40px;
     font-size: 1.5em;
     text-decoration: none;
+    padding:25px;
   }
+
   h1 {
     color: steelblue;
     text-align: center;
+    margin:50px 0;
   }
   img {
     width: 80%;
@@ -30,6 +33,8 @@ body {
   footer {
     background-color: steelblue;
     color: white;
+    padding:25px;
+
   }
  
 nav, footer {

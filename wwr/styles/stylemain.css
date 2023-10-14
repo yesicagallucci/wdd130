@@ -1,81 +1,135 @@
-#content{
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Mooli&display=swap');
+
+
+#content {
     max-width:1600px;
     margin: 0 auto;
 }
     
-nav a{
+nav a {
     text-align: center;
     color:#123E59;
     text-decoration: none;
+    padding: 35px;
+    width: 100%;
 }
-#hero-msg h1, #hero-msg h4{
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+   
+}
+.button-box {
     text-align: center;
 }
-.button-box{
+main section {
     text-align: center;
 }
-main section{
-    text-align: center;
-}
-#background{
+#background {
     height:725px;
     background-color: #FCE172;
 }
-body{
+body {
     background-color:#5b772d;
+    font-family: 'Mooli', Helvetica, sans-serif;
+    font-size: 22px;
+    padding:0;
+    margin:0;
 }
-header{
+header {
     background-color: #FCE172;
+    width:100%;
 }
-nav a:hover{
+nav a:hover {
     background-color: #123E59;
     color:#79CFD9;
 }
-.book, .join{
+.book, .join {
     background-color: #FCE172;
     color: #123E59;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
-.book:hover, .join:hover{
+.book:hover, .join:hover {
     background-color: #123E59;
     color:#79CFD9;
 }
-.msg{
+.msg {
     background-color: #FCE172;
+    line-height: 1.5em;
+    padding: 35px;
 }
-footer{
+footer {
     background-color: #FCE172;
     color:#123E59;
+    margin-top: 200px;
 }
-footer a{
+footer a {
     color:#123E59;
     text-decoration: none;
 }
-footer a:hover{
+footer a:hover {
     color:#5b772d;
 }
-footer p{
+footer p {
     font-size: 1.2em;
+    padding: 25px 50px;
 }
-footer p a:hover{
+footer p a:hover {
     text-decoration: underline;
 }
-.home-title{
+.home-title {
     color:#FCE172;
+    font-family: 'Love Ya Like A Sister', "Bradley Hand", "Luminari";
+    font-size: 2em;
+    margin-top: 10px;
 }
-h4{
+h4 {
     color:#fff;
 }
-.msg h2{
+.msg h2 {
 color: #FCE172;
+font-family: 'Love Ya Like A Sister', "Bradley Hand", "Luminari";
 }
-.msg p{
+.msg p {
     color:#123E59;
+    font-size:.8em;
+    padding-bottom: 15px;
 }
 
-.logo{
+.logo {
     width: 80px;
 }
-.icon{
+.icon {
     width: 80px;
+    padding-top: 10px;
+}
+h1, #hero-msg h1 {
+    font-family: 'Love Ya Like A Sister', "Bradley Hand", "Luminari";
+}
+h2 {
+    margin:0;
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}  
+.card-img {
+    border:10px solid #FCE172;
+}
+main section img {
+    box-sizing: border-box;
+}
+section.msg{
+    margin:30px;
+  
+}
+.mountains{
+    margin-top: 50px;
 }
