@@ -279,21 +279,33 @@ section.msg{
   .tabimg{
     width: 100%;
   }
- .button-box{
+  .button-boxpagetwo{
     width: 10px;
     grid-column: 4/6;
     grid-row: 12;
     z-index: 1;
- }
- .button-box {
     overflow: visible;
     margin: 0 auto;
-  }
-  
-  .book {
+ }
+    
+  .booktwo {
     display: inline-block;
     width: 150px;
   }
+  .booktwo {
+    background-color: #FCE172;
+    color: #123E59;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+.booktwo:hover {
+    background-color: #123E59;
+    color:#79CFD9;
+}
   
 
 @media screen and (max-width: 900px) {
