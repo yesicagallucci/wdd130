@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Whitewater Rafting Vacations | Dry Oar Boating | Homes</title>
+        <link rel="stylesheet" href="styles/stylemain.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/dryoarlogo.png" alt="dry oar logo">
+                </a>
+                <nav>
+                    <a href="index.html" target="_blank">Home</a>
+                    <a href="rivers.html" target="_blank">Rivers</a>           
+                    <a href="site-plan-rafting.html" target="_blank">Site Plan</a>            
+                    <a href="contactus.html" target="_blank">Contact Us</a>
+                </nav>
+            </header>
+            <div id="hero">
+                <div id="hero-box">
+                    <img id="hero2-img" src="images/river-wide2page2hero.jpg" alt="someone rafting">
+                </div>                                
+                <section id="hero-msg">
+                    <h1 class="home-title">Rivers</h1>                                     
+                </section>
+            </div> 
+            <main class="home-grid">
+            
+            <h2 class="check">Check the adventures</h2>
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Arizona')">Arizona</button>
+                <button class="tablinks" onclick="openCity(event, 'Idaho')">Idaho</button>
+                <button class="tablinks" onclick="openCity(event, 'Utah')">Utah</button>
+            </div>
+        
+                <!-- Tab content -->
+            <div id="Arizona" class="tabcontent">
+                <h3>Grand Canyon, Arizona</h3>
+                <img class="tabimg" src="images/arizona1.jpg" alt="arizona landscape">
+                <p>This is the grand daddy of all canyons and the grand daddy of all river trips. You will never forget your visit to the Grand Canyon. <br><br> Grand Canyon river rafting combines world-class whitewater with breathtaking scenery to make one truly unforgettable river experience. The canyon is filled not only with exhilarating whitewater rapids, but with side canyons and ancient indian ruins accessible only by river. <br> <br>CLASS I - X: The Grand Canyon uses a unique river rating scale. The rapids in the Canyon are technically rated I - X ( 1 - 10) to accommodate such a wide variety of rapids and river variances. However, most people are familiar with the regular I - V river rating scale, so we often refer to both. </p>
+            </div>
+        
+            <div id="Idaho" class="tabcontent">
+                <h3>Main Fork of the Salmon River, Idaho</h3>
+                <img class="tabimg" src="images/idaho1.jpg" alt="river in idaho">
+                <p>Nestled deep in the Frank Church Wilderness of No Return winds the Salmon river. The Salmon was given the nickname long ago as the River of No Return by the people living near it because of the number of folks that came to visit and fell so in love with the rugged beauty of the river that they never left.<br><br> Herds of elk and deer graze on the hillsides around the river and bear and bighorn sheep are also commonly sighted. The river corridor is also lined with awe inspiring ponderosa pine which tower over the sandy beaches in the campsites and provide shelter from sun or rain when needed. <br> <br>Let's not forget the rapids! They range from class I-IV. The Salmon is one of the longest undammed rivers in the United States. As a free flowing river the water is higher, faster, and colder in the early summer and lower, slower, and warmer in the late summer. There are good rapids all summer...but families with children who like to swim tend to appreciate the late summer's slower, warmer water more.  </p>
+            </div>
+        
+            <div id="Utah" class="tabcontent">
+                    <h3>Desolation and Gray Canyon, Utah</h3>
+                    <img class="tabimg" src="images/utah1.jpg" alt="river in utah">
+                    <p>Winding through canyons in central Utah, in some of the most desolate land anywhere, the Green river flows towards the mighty Colorado river and the sea. High grey stone cliffs, beautiful desert scenery, and great rapids have made this run famous. This 84-mile trip runs from from Sand Wash to Swaseys Rapid (just outside Green River Utah) and boasts outstanding scenery, interesting geologic formations, evidence of prehistoric and historic human activity, and great whitewater opportunities. <br><br> Desolation is rated a Class II/III and is usually done in 6 days <br><br> Desolation Canyon has been recognized as a National Landmark.  This designation is based on the uniqueness and rich history that the canyon tells.</p>
+            </div>     
+            <div class="button-box">
+                <a class="book" href="contactus.html">Book Now</a>
+            </div>   
+            <script>
+                function openCity(evt, cityName) {
+                        // Declare all variables
+                        var i, tabcontent, tablinks;
+
+                        // Get all elements with class="tabcontent" and hide them
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Get all elements with class="tablinks" and remove the class "active"
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the current tab, and add an "active" class to the button that opened the tab
+                        document.getElementById(cityName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+            </script>               
+            </main>
+            <footer>
+                <p>Dry Oar &copy; 2023 - Yesica Gallucci</p>
+                <p><a href="site-plan-rafting.html">Site Plan</a></p>
+                <!--<p>Royalty free images and icons from <a href="https://pixabay.com/">Pixabay</a> and <a href="https://thenounproject.com/">The Noun Project</a> -->
+                <p><a href="contactus.html">Contact Us</a></p>
+                <div class="Social">
+                    <a href="https://facebook.com" target="_blank">
+                        <img class="icon" src="images/facebook_4494475.png" alt="fb icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img class="icon" src="images/instagram_4494489.png" alt="instagram icon">
+                    </a>
+                    <a href="https://youtube.com" target="_blank">
+                        <img class="icon" src="images/youtube_4494485.png" alt="youtube icon">
+                    </a>
+                </div>  
+                
+            </footer>
+        </div>
+    </body>
+</html>
