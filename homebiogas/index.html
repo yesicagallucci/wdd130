@@ -5,64 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mango biogas - Home</title>
     <link rel="stylesheet" href="styles/stylemain.css">
+    <script>
+          let slideIndex; // Declare slideIndex globally
+
+        window.onload = function() {
+        slideIndex = 1; // Initialize slideIndex inside the onload function
+        showSlides(slideIndex);
+    
+        }
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
 </head>
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo.png" alt="Mango on flames- mago biogas logo">
-            </a>
             <nav>
-                <a href="cooking.html" target="_blank">Cooking with mango biogas</a>
-                <a href="fertilizer.html" target="_blank">Fertilizer</a>            
+              <ul>
+                <li>
+                  <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/logo.png" alt="Mango on flames- mago biogas logo">
+                 </a>
+                </li>
+                <li><a href="cooking.html" target="_blank">Cooking with mango biogas</a></li>
+                <li><a href="fertilizer.html" target="_blank">Fertilizer</a></li>
+                <li> <!-- Load icon library -->
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+                   <!-- The form -->
+                   <form class="example" action="action_page.php">
+                   <input type="text" placeholder="Search.." name="search">
+                   <button type="submit"><i class="fa fa-search"></i></button>
+                   </form>
+
+                </li>
+                
+              </ul>       
             </nav>
-            <!--add search bar here-->
+           
+            
         </header>
         <main>
             <h1>Mango Biogas</h1>
             <!--Slider gallery here-->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                  <div class="numbertext">1 / 8</div>
+                    <img src="images/home 1.jpg" alt="Homebiogas packaged" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 8</div>
+                    <img src="images/home 2.jpg" alt="the rest of the biodigester packed in the box" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 8</div>
+                    <img src="images/home 3.jpg" alt="burner new out of the box" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">4 / 8</div>
+                    <img src="images/home 4.jpg"  alt="showing the burner" style="width:100%">
+                </div>
+              
+               <div class="mySlides">
+                  <div class="numbertext">5 / 8</div>
+                    <img src="images/home 5.jpg" alt="biodigester ready to assemble" style="width:100%">
+                </div>
+              
+                 <div class="mySlides">
+                  <div class="numbertext">6 / 8</div>
+                    <img src="images/home 6.jpg"  alt="biodigester almost ready to start function" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="images/home 10.jpg"  alt="Our cat totoro sleeping over the biodigester" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="images/home 11.jpg"  alt="biodigester up nd running - 2 years later" style="width:100%">
+                </div>  
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                <!-- Image text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              
+                <!-- Thumbnail images 
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="images/home 1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Unboxing the biodigester">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/home 2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Unboxing the biodigester">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/home 3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Unboxing the biodigester">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/home 4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Unboxing the biodigester">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/home 5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ready to set it up">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/home 6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Almost done">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/home 10.jpg" style="width:100%" onclick="currentSlide(7)" alt="Totoro on the biodigester">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/home 11.jpg" style="width:100%" onclick="currentSlide(8)" alt="Up and running 2 years later">
+                  </div>
+                </div>-->
+            </div>
             <p>
                 We are Walter and Yesica, we are from Buenos Aires, Argentina but two and a half years ago, in mid-2021, we moved to Caacupe, Paraguay. This move involved many changes in our lifestyle, we went from living in one of the largest cities in the world to a city of 50,000 inhabitants that is located more than 50 km from the country's capital. Another important change was having access to a backyard, a lot of land, and trees in our house, knowing this since we started planning our move a year before we dreamed of having a household biogas digester system. <br> The options for cooking here are packaged gas, electric hob, brazier, and grill we were not used to cooking with a brazier, so we knew that we were going to use electricity to cook, but we thought that biogas could be a solution to not spend money on bottled gas, spoiler alert: we were right!<br>
                 We arrived in Caacupe between April and May 2021 with our cat Totoro, who was 12 years old at the time. to be able to move, and due to the pandemic we had to sell 95% of our things and it was with part of that money that we were able to buy the biodigester, at that time it was convenient for us to buy it from Argentina, but we bought it while living in Paraguay and they sent it by order by a bus company. We received it at the end of May 2021.
                 We installed it right away but it took a few months to give us gas continuously because we were in the fall-winter season.<br>
             </p>
-            <img src="images/home 11.jpg" alt="biodigester parts">
+            <img src="images/home 11 bis.png" alt="biodigester parts">
             <p> But the main reason for this website, or its reason for being, is to tell you what a household biogas digester system is, how it works, and its benefits.
               <a href="https://www.argentina.gob.ar/ambiente/accion/biodigestores#:~:text=Un%20biodigestor%20es%20un%20recipiente,mediante%20un%20generador%20a%20gas." target="_blank">This</a> site from Argentina's government says about what a biodigester is and does: <br>
               "A biodigester is a container or tank (hermetically closed) that is loaded with organic waste. Inside, the decomposition of organic matter occurs to generate biogas, a fuel with which you can cook, heat water and produce electrical energy, using a gas generator. The residue from this process, formed by effluent and sludge, is used as a biofertilizer."            
               <br>Our biodigester is from<a href="https://homebiogas.com/" target="_blank"> Homebiogas</a> but I think there are other brands out there. It's like having a big stomach in the backyard and feeding it with kitchen residues and other organic waste. 
               to make it start you have to put cow or horse manure in it, so it develops the bacteria needed to start the process, after a few days or weeks I'm not sure, because it took a few months for us because of winter to start producing gas.              
            </p>
-           <img src="images/home 7.jpg" alt="can full of mangoes">
-           <img src="images/home 8.jpg" alt="putting the mangoes into the biodigester">
-           <img src="images/home 9.jpg" alt="mangoes pilling up">
-           <img src="images/home 12.jpg" alt="biodigester full of gas">
-           <img src="images/home 13.jpg" alt="mango tree">
-           <img src="images/home 14.jpg" alt="mangoes on the ground">
+           <div class="gallery">
+              <div class="big-stretch">
+                <img src="images/home 7.jpg" alt="can full of mangoes">
+
+              </div>
+              <div class="big-stretch">
+                <img src="images/home 8.jpg" alt="putting the mangoes into the biodigester">
+                
+              </div>
+              <div class="big-stretch">
+                <img src="images/home 9.jpg" alt="mangoes pilling up">
+                
+              </div>
+              <div class="big-stretch">
+                <img src="images/home 12.jpg" alt="biodigester full of gas">
+                
+              </div>
+              <div class="big-stretch">
+                <img src="images/home 13.jpg" alt="mango tree">
+                
+              </div>
+              <div class="big-stretch">
+                <img src="images/home 14.jpg" alt="mangoes on the ground">
+                
+              </div>
+                
+            </div>
+           
            <p>By the time the heat began and the biodigester began to produce gas, the mango season also began. <br>In the area where we live, there are many mango trees, every house has at least one, and they are also on public roads. In our house, there are two huge ones, and it is very difficult to harvest the mangoes because they are very high, so most end up on the ground bitten by birds or burst, all those mangoes feed the biodigester from November to February more or less, and That's why we say is mango biogas.</p>
            <div class="button-box">
-              <a class="intlink" href="cooking.html">cooking with Mango Biogas</a>
-           </div>               
-           <div class="button-box">
-            <a class="intlink" href="fertilizer.html">Fertilizer</a>
+              <a class="intlink" href="cooking.html">Cooking with Mango Biogas</a>
+              <a class="intlink2" href="fertilizer.html">Fertilizer</a>
+              <a class="backtotop" href="#">Back to top</a>
          </div>   
-         <a class="backtotop" href="#">Back to top</a>
+         
         </main>
         <footer>
-            <p>Mango biogas &copy; 2023 - Yesica Gallucci</p>    
-            <p><a href="site-plan.html">Site Plan</a></p>         
-           
-           <div class="Social"><!--add links to our social media accounts-->
-                <a href="https://facebook.com" target="_blank">
+          <ul>
+            <li>Mango biogas &copy; 2023 - Yesica Gallucci</li>
+            <li><a href="site-plan.html">Site Plan</a></li>
+            <li>
+              <div class="Social"><!--add links to our social media accounts-->
+                <a href="https://www.facebook.com/search/top?q=la%20dimensi%C3%B3n%20paraguaya" target="_blank">
                    <img class="icon" src="images/facebook_4494475.png" alt="fb icon">
                 </a>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://www.instagram.com/dimensionparaguaya/" target="_blank">
                    <img class="icon" src="images/instagram_4494489.png" alt="instagram icon">
                 </a>
                 <a href="https://youtube.com" target="_blank">
                    <img class="icon" src="images/youtube_4494485.png" alt="youtube icon">
                 </a>
-           </div>  
+             </div>  
+
+            </li>         
+          </ul>
+            
         </footer>
    </div>
 </body>

@@ -8,16 +8,32 @@
 </head>
 <body>
     <div id="content">
-        <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo.png" alt="Mango on flames- mago biogas logo">
-            </a>
-            <nav>
-                <a href="cooking.html" target="_blank">Cooking with mango biogas</a>
-                <a href="fertilizer.html" target="_blank">Fertilizer</a>            
-            </nav>
-            <!--add search bar here-->
-        </header>
+      <header>
+         <nav>
+           <ul>
+             <li>
+               <a id="logo_link" href="index.html">
+                 <img class="logo" src="images/logo.png" alt="Mango on flames- mago biogas logo">
+              </a>
+             </li>
+             <li><a href="cooking.html" target="_blank">Cooking with mango biogas</a></li>
+             <li><a href="fertilizer.html" target="_blank">Fertilizer</a></li>
+             <li> <!-- Load icon library -->
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+                <!-- The form -->
+                <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+
+             </li>
+             
+           </ul>       
+         </nav>
+        
+         
+     </header>
         <main>
             <h1>Cooking with Mango Biogas</h1>
             <!--video goes here-->
@@ -36,26 +52,31 @@
               <a class="intlink" href="index.html">Home</a>
            </div>               
            <div class="button-box">
-            <a class="intlink" href="fertilizer.html">Fertilizer</a>
+            <a class="intlink2" href="fertilizer.html">Fertilizer</a>
          </div>   
          <a class="backtotop" href="#">Back to top</a>
         </main>
         <footer>
-            <p>Mango biogas &copy; 2023 - Yesica Gallucci</p>   
-            <p><a href="site-plan.html">Site Plan</a></p>            
+         <ul>
+           <li>Mango biogas &copy; 2023 - Yesica Gallucci</li>
+           <li><a href="site-plan.html">Site Plan</a></li>
+           <li>
+             <div class="Social"><!--add links to our social media accounts-->
+               <a href="https://www.facebook.com/search/top?q=la%20dimensi%C3%B3n%20paraguaya" target="_blank">
+                  <img class="icon" src="images/facebook_4494475.png" alt="fb icon">
+               </a>
+               <a href="https://www.instagram.com/dimensionparaguaya/" target="_blank">
+                  <img class="icon" src="images/instagram_4494489.png" alt="instagram icon">
+               </a>
+               <a href="https://youtube.com" target="_blank">
+                  <img class="icon" src="images/youtube_4494485.png" alt="youtube icon">
+               </a>
+            </div>  
+
+           </li>         
+         </ul>
            
-           <div class="Social"><!--add links to our social media accounts-->
-                <a href="https://facebook.com" target="_blank">
-                   <img class="icon" src="images/facebook_4494475.png" alt="fb icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                   <img class="icon" src="images/instagram_4494489.png" alt="instagram icon">
-                </a>
-                <a href="https://youtube.com" target="_blank">
-                   <img class="icon" src="images/youtube_4494485.png" alt="youtube icon">
-                </a>
-           </div>  
-        </footer>
+       </footer>
    </div>
 </body>
 </html>
