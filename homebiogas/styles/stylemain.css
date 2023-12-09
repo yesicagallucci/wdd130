@@ -56,7 +56,7 @@ nav ul li{
 nav ul li a{
   text-decoration: none;
   color:#c9db06;
-  font-family:"kaushan script";
+  font-family:"kaushan script", "bradley hand", sans-serif;
   font-size: 1.5em;
 }
 
@@ -139,7 +139,7 @@ footer ul li{
   line-height: 50px;
   text-decoration: none;
   color:#1a612b;
-  font-family:"kaushan script";
+  font-family:"kaushan script", "bradley hand", sans-serif;
   font-size: 1em;
   margin-top: 50px;
 
@@ -158,7 +158,7 @@ footer ul li a:hover{
 
 /*main*/
 p{
-    font-family: roboto;
+    font-family: roboto, tahoma, serif;
     color:#421b0c;
     grid-template-columns: 2/12;
     font-size: 1em;
@@ -167,7 +167,7 @@ p{
 }
 
 h1{
-    font-family: "kaushan script";
+    font-family: "kaushan script", "bradley hand", sans-serif;
     color:#1a612b;
     Text-align:center;
     font-size: 4em;
