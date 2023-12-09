@@ -11,7 +11,6 @@ body{
   font-size: 16px;
   margin: 0;
   padding: 30px;
-  
   justify-content: center;
 
 }
@@ -29,6 +28,14 @@ img {
    width:150px;
    
 }
+.logo:hover{
+  color:white;
+  opacity: 50%;
+  transition-duration:1s;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  }
 
 nav ul{
   display: grid;
@@ -53,7 +60,7 @@ nav ul li a{
   font-size: 1.5em;
 }
 
-nav ul li:hover{
+nav ul li a:hover {
   color:#1a612b;
 }
 
@@ -82,15 +89,39 @@ form.example input[type=text] {
 /*Footer*/
 .icon {
   width: 40px;
-  padding-top: 10px;
-  padding-right: 5px;
-  }
+  padding-top: 8px;
+  padding-right: 10px;
+}
+.icon:hover{
+color:white;
+opacity: 50%;
+-webkit-transform: scale(1.5);
+-ms-transform: scale(1.5);
+transform: scale(1.5);
+transition-duration:1s;
+}
 
 footer{
   background-color: #c9db06;
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+footer::before, footer::after {
+  content:"";
+  position: absolute; 
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+  /* some huge width */
+  background-color: inherit;
+}
+footer::before {
+  right: 100%;
+}
+footer::after {
+  left: 100%;
 }
 
 footer ul {
