@@ -222,6 +222,7 @@ h1{
     position: relative;
     max-height: 800px; /* Set a fixed height for the slider container */
     overflow: hidden; /* Hide any overflow if images exceed the set height */
+    
 }
 
 .mySlides img {
@@ -358,6 +359,7 @@ h1{
 .maingif{
   display: block;
   margin: 0 auto;
+  
 }
 
 .first{
